@@ -13,8 +13,8 @@ public class SumValidation {
         int count = jsonPath.getInt("courses.size()");
 
         for (int i =0;  i<count; i++){
-            int price = jsonPath.get("courses["+i+"].price");
-            int copies = jsonPath.get("courses["+i+"].copies");
+            int price = jsonPath.get("courses["+ i +"].price");
+            int copies = jsonPath.get("courses["+ i +"].copies");
             int totalAmount= price * copies;
             System.out.println(totalAmount);
             expectedAmount = expectedAmount+totalAmount;
